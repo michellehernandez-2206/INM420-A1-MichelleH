@@ -30,6 +30,11 @@ nav ul{
     color: #6C5CE7;
 }
 
+#thisone{
+    color: black;
+    font-weight: 700;
+}
+
 main{
     background-image: url(yelow.png);
     align-items: center;
