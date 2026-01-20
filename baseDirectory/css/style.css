@@ -1,0 +1,140 @@
+body{
+    font-family: "inter-variable", sans-serif;
+}
+
+nav{
+    display: flex;
+    box-shadow: #26323814 0px 4px 8px;
+    justify-content: space-between;
+    padding: 0px 135px;
+    padding-left: 115px;
+    align-items: center;
+    
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+nav div img{
+    width: 70px;
+    height: 64px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap:50px ;
+    padding: 0;
+    color: #6C5CE7;
+}
+
+main{
+    background-image: url(yelow.png);
+    align-items: center;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 96px;
+    text-align: center;
+    margin: 0px;
+}
+
+h3{
+    font-weight: 900;
+    font-size: 64px;
+    text-align: center;
+    margin: 0px;
+}
+
+span{
+    color: red;
+}
+
+.second_block{
+    margin: 0 135px;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 32px;
+}
+.second_block p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.forth_cards{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+
+}
+.support_card img{
+    background-color: #E84393;
+    border-radius: 100px;
+    padding-top: 5px;
+}
+
+.growth_card img{
+    background-color: #0984E3;
+    border-radius: 100px;
+    padding-top: 5px;
+}
+
+.driven_card img{
+    background-color: #6C5CE7;
+    border-radius: 100px;
+    padding-top: 5px;
+}
+
+.swap_card img{
+    background-color:#00B894;
+    border-radius: 100px;
+    padding-top: 5px;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.to_learn{
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: solid #ADADAD;
+    color: #6C5CE7;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: white;
+}
+
+.prices_block{
+ margin: 74px 135px;
+}
+
+.prices_block h1{
+    font-weight: 900;
+    font-size: 64px;
+    text-align: center;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: Gray;
+}
+
+h5 span{
+    color: #6C5CE7;
+}
+
