@@ -35,6 +35,17 @@ nav ul{
     font-weight: 700;
 }
 
+nav button{
+    background-color: #6C5CE7;
+    color: white;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 16px 40px;
+    border: none;
+    
+}
+
 main{
     background-image: url(yelow.png);
     align-items: center;
@@ -86,6 +97,7 @@ h4{
     background-color: #E84393;
     border-radius: 100px;
     padding-top: 5px;
+
 }
 
 .growth_card img{
