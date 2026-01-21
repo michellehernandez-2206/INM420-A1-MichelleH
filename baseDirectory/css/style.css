@@ -134,6 +134,8 @@ h6{
     background-color: white;
 }
 
+/* PRICES SECTION */
+
 .prices_block{
  margin: 74px 135px;
 }
@@ -155,3 +157,58 @@ h5 span{
     color: #6C5CE7;
 }
 
+.prices_block div{
+    display: flex;
+    gap: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 536px;
+    padding: 32px;
+}
+
+.box h6{
+    color: #6C5CE7;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.box h1{
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.box h1 span{
+    color: black;
+    font-weight: 800;
+    font-size: 12px;
+    align-items: center;
+    letter-spacing: 2.5px;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+  padding-left: 25px; /* Espacio para la imagen + margen */
+  position: relative; /* Para posicionar el ::before */
+}
+
+/* 3. Crear la viñeta con la imagen */
+li::before {
+  content: ''; /* Importante para pseudo-elementos */
+  position: absolute;
+  left: 0;
+  top: 50%; /* Centrar verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar */
+  width: 16px; /* Tamaño de tu imagen */
+  height: 16px; /* Tamaño de tu imagen */
+  background-image: url('ruta/a/tu/imagen.png'); /* ¡La imagen! */
+  background-size: contain; /* Ajusta la imagen al tamaño del cuadro */
+  background-repeat: no-repeat;
+}
