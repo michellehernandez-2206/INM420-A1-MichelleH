@@ -192,11 +192,13 @@ h5 span{
 
 ul{
     list-style: none;
+    margin-left: 0;
 }
 
 li {
   padding-left: 25px; /* Espacio para la imagen + margen */
   position: relative; /* Para posicionar el ::before */
+    line-height: 32px;
 }
 
 /* 3. Crear la viñeta con la imagen */
@@ -206,9 +208,18 @@ li::before {
   left: 0;
   top: 50%; /* Centrar verticalmente */
   transform: translateY(-50%); /* Ajuste fino para centrar */
-  width: 16px; /* Tamaño de tu imagen */
-  height: 16px; /* Tamaño de tu imagen */
-  background-image: url('ruta/a/tu/imagen.png'); /* ¡La imagen! */
+  width: 20px; /* Tamaño de tu imagen */
+  height: 20px; /* Tamaño de tu imagen */
+  background-image: url('/images/icon-check.png'); /* ¡La imagen! */
   background-size: contain; /* Ajusta la imagen al tamaño del cuadro */
   background-repeat: no-repeat;
+  border-radius: 100px;
+
+}
+
+.box button{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    
 }
