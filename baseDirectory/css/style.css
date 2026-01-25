@@ -1,7 +1,10 @@
 body{
     font-family: "inter-variable", sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
+/* NAVIGATION BAR */
 nav{
     display: flex;
     box-shadow: #26323814 0px 4px 8px;
@@ -9,6 +12,8 @@ nav{
     padding: 0px 135px;
     padding-left: 115px;
     align-items: center;
+    z-index: 5;
+    background-color: white
     
 }
 
@@ -51,16 +56,32 @@ main{
     align-items: center;
 }
 
+/* COMBINE AND GRID SECTION */
 header{
     justify-content: center;
     align-items: center;
+}
+
+#decorative-dots{
+    position: absolute;
+    top: 114px;
+    right: 0;
+    z-index: 2;
+}
+
+#decorative-diamont{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.4;
+    z-index: -2;
 }
 
 h2{
     font-weight: 800;
     font-size: 96px;
     text-align: center;
-    margin: 0px;
+    margin: 80px 0px 0px 0px;
 }
 
 h3{
@@ -71,8 +92,57 @@ h3{
 }
 
 span{
-    color: red;
+    color: #d53b33;
+    text-shadow: 0px 4px 0px white;
 }
+
+#decorative-underline{
+    position: absolute;
+    top: 250px;
+    left: 666px;
+    z-index: -1;
+}
+
+/* GRID */
+
+.parent {
+display: grid;
+grid-template-columns: repeat(7, 170px);
+grid-template-rows: repeat(7, 111px);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin: 64px 135px;
+}
+
+.div2 p, .div10 p{
+    font-size: 18px;
+}
+
+.div1 { grid-area: 1 / 3 / 5 / 6; }
+.div2 { grid-area: 2 / 6 / 3 / 8; }
+.div3 { grid-area: 3 / 7 / 5 / 8; }
+.div4 { grid-area: 3 / 6 / 5 / 7; }
+.div5 { grid-area: 5 / 7 / 7 / 8; }
+.div6 { grid-area: 5 / 5 / 8 / 7; }
+.div7 { grid-area: 5 / 3 / 7 / 5; }
+.div8 { grid-area: 6 / 1 / 7 / 3; }
+.div9 { grid-area: 3 / 1 / 6 / 3; }
+.div10 { grid-area: 1 / 1 / 3 / 3; }
+
+
+.div8 button{
+    background-color: #6C5CE7;
+    color: white;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 16px 40px;
+    border: none;
+    
+}
+
+/* FEATURES SECTION */
+
 
 .second_block{
     margin: 0 135px;
@@ -160,14 +230,32 @@ h5 span{
 .prices_block div{
     display: flex;
     gap: 30px;
+    position: relative;
+}
+
+#wiggle{
+    position: absolute;
+    top: 510px;
+    left: 365px;
+    z-index: -5;
 }
 
 .box{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 370px;
     height: 536px;
     padding: 32px;
+    background-color: white;
+    height: 536px;
+    width: 370px;
+    justify-content: space-between;
+}
+
+.box > div{
+    display: flex;
+    flex-direction: column;
 }
 
 .box h6{
@@ -180,6 +268,7 @@ h5 span{
     text-align: left;
     font-weight: 700;
     font-size: 48px;
+    margin: 0;
 }
 
 .box h1 span{
@@ -192,34 +281,134 @@ h5 span{
 
 ul{
     list-style: none;
-    margin-left: 0;
+    margin-left: -40px;
+    margin-top: 0;
 }
 
 li {
-  padding-left: 25px; /* Espacio para la imagen + margen */
-  position: relative; /* Para posicionar el ::before */
-    line-height: 32px;
+    padding-left: 25px; /* Espacio para la imagen + margen */
+    position: relative; /* Para posicionar el ::before */
+    line-height: 47px;
 }
 
-/* 3. Crear la viñeta con la imagen */
-li::before {
-  content: ''; /* Importante para pseudo-elementos */
-  position: absolute;
-  left: 0;
-  top: 50%; /* Centrar verticalmente */
-  transform: translateY(-50%); /* Ajuste fino para centrar */
-  width: 20px; /* Tamaño de tu imagen */
-  height: 20px; /* Tamaño de tu imagen */
-  background-image: url('/images/icon-check.png'); /* ¡La imagen! */
-  background-size: contain; /* Ajusta la imagen al tamaño del cuadro */
-  background-repeat: no-repeat;
-  border-radius: 100px;
+/*viñeta*/
+.box ul li::before {
+    content: ''; /* Importante para pseudo-elementos */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+    width: 20px; /* Tamaño de tu imagen */
+    height: 20px; /* Tamaño de tu imagen */
+    background-image: url('/images/icon-check.png'); /* ¡La imagen! */
+    background-size: contain; /* Ajusta la imagen al tamaño del cuadro */
+    background-repeat: no-repeat;
+    border-radius: 100px;
+
 
 }
 
 .box button{
-    color: black;
+    /* position: absolute; */
+    /* margin: 0 32px;
+    bottom: 32px; */
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: solid #ADADAD;
+    color: #6C5CE7;
     font-weight: 700;
     font-size: 18px;
+    background-color: white;
+    height: 64px;
     
 }
+
+.free_box ul li::before{
+      background-color: rgba(128, 128, 128, 0.326)
+}
+
+.individual_box ul li::before{
+      background-color: #EFCC7D
+}
+
+.corporate_box ul li::before{
+      background-color: #C3F5E4
+}
+
+
+.individual_box{
+    box-shadow: 0 16px 24px 0 #26323814, 0 8px 8px 0 #2632381F;
+    border-radius: 16px;
+}
+
+.individual_box button{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #6C5CE7;
+}
+
+.individual_box div button{
+    color: #000000;
+    font-weight:800;
+    font-size: 12px;
+    border: solid #6C5CE7;
+    background-color: white;
+    letter-spacing: 2.5px;
+    width: 90px;
+    height: 32px;
+    padding: 0;
+}
+
+.individual_box div{
+    justify-content: space-between;
+}
+
+/* FOOTER AND INFO */
+
+footer{
+    margin-top: 160px;
+    
+}
+
+footer div{
+    display: flex;
+}
+
+.tags{
+    margin-left: 135px;
+}
+
+.tags h6, .Contact h6{
+    font-weight:800;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #ADADAD;
+}
+
+
+.Contact{
+    margin-left: 120px;
+}
+.Contact p{
+    font-weight:700;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    margin-top: 0px;
+    color: #6C5CE7;
+}
+
+.tags .list{
+    display: flex;
+    gap: 80px;
+}
+
+.tags .list div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
