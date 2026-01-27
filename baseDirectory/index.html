@@ -13,7 +13,10 @@
 <body>
     <nav>
         <div>
-            <img src="/images/icon-layout.png" alt="pruple grid icon">
+            <picture>
+                <source media="(min-width:900px)" srcset="/images/icon-layout.png">
+                <img src="/images/icon-menu.svg" alt="pruple grid icon">
+            </picture>
             <h1>Grid</h1>
         </div>
         <ul>
@@ -31,14 +34,23 @@
     <main>
         <!-- HEADER -->
         <div class="header">
+            <!-- text for desktop -->
             <img id="decorative-dots" src="/images/🎨 Dots 1.svg" alt="decorative yellow dots">
             <img id="decorative-diamont" src="/images/Rectangle.svg" alt="rounded corners diamont yellow decoration">
-            <h2>Combine <span class="text-body-danger">fine</span> images</h2>
+            <!-- <img id="just-decor-mobile" src="images/Shape 2.svg" alt=""> -->
+            <h2 class="text-desktop">Combine <span class="text-body-danger">fine</span> images</h2>
             <img id="decorative-underline" src="/images/bluething.svg" alt="aquamarine higlight">
-            <h3>To represent a product</h3>
+            <h3 class="text-desktop">To represent a product</h3>
+
+            <!-- text for mobile -->
+            <h2 class="text-mobile">Combine</h2>
+            <img id="decorative-underline" src="/images/bluething.svg" alt="aquamarine higlight">
+            <h3 class="text-mobile"> <span class="text-body-danger">Cool</span> images</h3>
+            <h4 class="text-mobile">To create any grid by<br> scaling and resizing</h4>
+            <img id="arrow" class="text-mobile" src="/images/Icon Acrylic.svg" alt="down arrow">
         </div>
 
-        <!-- Grid -->
+        <!-- Grid  desk -->
         <div class="parent">
             <div class="div1">
                 <img src="/images/purpleman.jpg" alt="">
@@ -70,20 +82,49 @@
             <div class="div10">
                 <p>Use mixed grid with imagery, replace with your own photos and descriptions</p>
             </div>
-
         </div>
 
+        <!-- grid mobile -->
+        <div class="parent-mobile">
+            <div class="div1">
+                <img src="images/cards mobile/LIP.png" alt="">
+            </div>
+            <div class="div2">
+                <img src="/images/cards mobile/man.png">
+            </div>
+            <div class="div3">
+                <img src="/images/cards mobile/cloak.png" alt="">
+            </div>
+            <div class="div4">
+                <img src="/images/cards mobile/plant.png" alt="">
+            </div>
+            <div class=" div5">
+                <img src="/images/cards mobile/rainbow.png" alt="">
+            </div>
+            <div class=" div6">
+                <img src="/images/cards mobile/flowers.png" alt="">
+            </div>
+            <div class=" div7">
+                <img src="/images/cards mobile/board.png" alt="">
+            </div>
+            <div class=" div8">
+                <button>Learn more</button>
+            </div>
+        </div>
+
+
         <!-- GOOD DESING SECOND BLOCK -->
-        <section class="second_block">
+        <section class=" second_block">
             <h4>Delivering good designs since 1954 🚚💨</h4>
-            <p>We’re the first multi-purpose design kit solutions for businesses. We help you bridge <br>
+            <p>We’re the first multi-purpose design kit solutions for businesses. We help you bridge
                 gaps between your layouts, templates and developers to empower all involved.</p>
             <!-- Cards information -->
             <div class="forth_cards">
                 <div class="support_card">
                     <img src="/images/icon-phone-call.png" alt="">
                     <h6>Support</h6>
-                    <p>Delivering faster and more personalized support with shared screens and cool design systems for
+                    <p>Delivering faster and more personalized support with shared screens and cool design systems
+                        for
                         Figma</p>
                     <button class="to_learn">Learn more</button>
                 </div>
@@ -96,7 +137,8 @@
                 <div class="driven_card">
                     <img src="/images/icon-zap.png" alt="">
                     <h6>Coponents-driven</h6>
-                    <p>Delivering faster and more personalized support with shared screens and cool design systems for
+                    <p>Delivering faster and more personalized support with shared screens and cool design systems
+                        for
                         Figma</p>
                     <button class="to_learn">Learn more</button>
                 </div>
