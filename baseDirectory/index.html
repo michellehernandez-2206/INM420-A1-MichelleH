@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Assignment</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/tty3yxy.css">
 
 </head>
 
@@ -19,14 +18,18 @@
         </div>
         <ul>
             <li id="thisone">How it works</li>
+            <img src="images/•.svg" alt="">
             <li>Who we are</li>
+            <img src="images/•.svg" alt="">
             <li>What we do</li>
+            <img src="images/•.svg" alt="">
             <li>Contact Us</li>
         </ul>
         <button>Sing in</button>
     </nav>
 
     <main>
+        <!-- HEADER -->
         <div class="header">
             <img id="decorative-dots" src="/images/🎨 Dots 1.svg" alt="decorative yellow dots">
             <img id="decorative-diamont" src="/images/Rectangle.svg" alt="rounded corners diamont yellow decoration">
@@ -34,12 +37,14 @@
             <img id="decorative-underline" src="/images/bluething.svg" alt="aquamarine higlight">
             <h3>To represent a product</h3>
         </div>
+
+        <!-- Grid -->
         <div class="parent">
             <div class="div1">
                 <img src="/images/purpleman.jpg" alt="">
             </div>
             <div class="div2">
-                <p>This is multipurpose grid, it fits for portfolio, services or agency web site</p>
+                <p>This is multipurpose grid, it fits for<br>portfolio, services or agency web site</p>
             </div>
             <div class="div3">
                 <img src="/images/blue shoe.jpg" alt="">
@@ -68,10 +73,12 @@
 
         </div>
 
+        <!-- GOOD DESING SECOND BLOCK -->
         <section class="second_block">
             <h4>Delivering good designs since 1954 🚚💨</h4>
             <p>We’re the first multi-purpose design kit solutions for businesses. We help you bridge <br>
                 gaps between your layouts, templates and developers to empower all involved.</p>
+            <!-- Cards information -->
             <div class="forth_cards">
                 <div class="support_card">
                     <img src="/images/icon-phone-call.png" alt="">
@@ -103,6 +110,7 @@
             </div>
         </section>
 
+        <!-- PRICES 3RD BLOCK -->
         <section class="prices_block">
             <h1>Affordable pricing</h1>
             <h5>Bill me <span>monthly</span> • yearly</h5>
@@ -160,10 +168,10 @@
             <section class="tags">
                 <h6>follow us</h6>
                 <div class="icons">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="/images/icon-facebook.svg" alt="">
+                    <img src="/images/icon-linkedin.svg" alt="">
+                    <img src="/images/icon-slack.svg" alt="">
+                    <img src="/images/icon-twitter.svg" alt="">
                 </div>
                 <h6>Information</h6>
                 <div class="list">
@@ -183,14 +191,28 @@
                     </div>
                 </div>
             </section>
-
+            <!-- FORM FOOTER SECTION -->
             <section class="Contact">
                 <h6>follow us</h6>
                 <p>hello@fasterapp.com</p>
                 <h6>keep in touch</h6>
-                <fieldset>
+                <section id="form_frame">
+                    <form autocomplete="on" action="" method=" post">
 
-                </fieldset>
+                        <input id="firstname" type="text" placeholder="Your name">
+                        <!-- <img src="images/icon-user.svg" alt=""> -->
+                        <input id="lasttname" type="text" placeholder="E-mail"><br>
+                        <!-- <img src="images/icon-mail.svg" alt=""> -->
+
+                        <textarea class="tx" id="message" placeholder="Leave your message"></textarea>
+                        <!-- <img src="images/icon-edit.svg" alt=""> -->
+
+                        <input type="submit" value="SEND" id="submit">
+
+                    </form>
+
+                </section>
+
             </section>
         </div>
         <img src="/images/Wave.svg" alt="">
